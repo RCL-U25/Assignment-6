@@ -132,18 +132,5 @@ public class Election
             System.out.println(Roster.get(i) + " - " + voteMap.get(Roster.get(i)));
         }
     }
-
-    public boolean reachedMax() {
-        if (totalVotes == maxVotes)
-        {
-            System.out.println("All votes counted.");
-            totalVotes++;
-            return true;
-        }else if (totalVotes > maxVotes)
-        {
-            return true;
-        }
-        return false;
-    }
 }
 
